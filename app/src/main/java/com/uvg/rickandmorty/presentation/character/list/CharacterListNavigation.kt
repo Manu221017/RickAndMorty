@@ -11,6 +11,6 @@ fun NavGraphBuilder.characterListScreen(
     onCharacterClick: (Int) -> Unit
 ) {
     composable<CharacterListDestination> {
-        CharacterListRoute(onCharacterClick = onCharacterClick)
+        onCharacterClick.CharacterListRoute()
     }
 }
